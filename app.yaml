@@ -1,3 +1,6 @@
-runtime: python37
+runtime: python39
+service: Loan-prediction-app
 
-entrypoint: python Loan Prediction.py
+handlers:
+- url: /.*
+  script: auto
