@@ -1,6 +1,13 @@
-runtime: python39
-service: Loan-prediction-app
+runtime: python37
+threadsafe: true
 
 handlers:
 - url: /.*
-  script: auto
+  script: Logistic_Prediction.py
+  
+libraries :
+- name: pandas
+  version : 2.0.0
+- name : numpy
+  version: 1.24.2
+  
